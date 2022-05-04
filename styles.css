@@ -1,27 +1,31 @@
 ﻿* {
-    color: mediumpurple;
+    color: #ffffff;
 }
-
-
+a.fIqyif.MdgzLb {
+    color: #b6ff00;
+    background-color: #000000ab;
+}
+/*a.MdgzLb{
+    background-color:#000000ab;
+}*/
 
 body {
-    background-color: black;
+    background-color: #393939;
 }
-
-
 
 div.TiX9ce.dCWhBf, div.ptC3Le.FTnqqe.bBKqme, div.kUwJrc.R4GWv { /*slider*/
     background-color: white;
 }
 /*Play bar and top*/
 div.d5Ncgc, div.gb_Md.gb_3d.gb_Sd {
-    background-color: #190243;
+    background-color: #000000;
 }
+
 form.gb_Te {
-    background: mediumpurple;
+    background: #000000;
 }
 
 /*text in blocks*/
-div.pcNKmc, div.k4WgAf, div.ZTClBb {
-    color: mediumpurple;
+div.pcNKmc, div.k4WgAf, div.ZTClBb, div.kMNxad {
+    color: #ffffff;
 }

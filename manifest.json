@@ -1,7 +1,7 @@
 {
   "name": "Podcast Dark Mode",
   "description": "Add dark theme to google podcasts!",
-  "version": "0.1.0",
+  "version": "1",
   "manifest_version": 3,
   "icons": {
     "16": "images/16x16.png",
