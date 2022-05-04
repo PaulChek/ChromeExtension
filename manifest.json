@@ -1,0 +1,28 @@
+{
+  "name": "Podcast Dark Mode",
+  "description": "Add dark theme to google podcasts!",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "images/16x16.png",
+    "32": "images/32x32.png",
+    "48": "images/48x48.png",
+    "128": "images/128x128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { // optional
+      "16": "images/16x16.png", // optional
+      "24": "images/24x24.png", // optional
+      "32": "images/32x32.png" // optional
+    }
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [ "https://podcasts.google.com/*" ],
+      "css": [ "styles.css" ],
+      "js": [ "script_popup.js" ]
+    }
+  ]
+}
