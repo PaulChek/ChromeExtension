@@ -1,6 +1,7 @@
-﻿* {
+﻿*, div, span {
     color: #ffffff;
 }
+
 a.fIqyif.MdgzLb {
     color: #b6ff00;
     background-color: #000000ab;
@@ -24,7 +25,9 @@ div.d5Ncgc, div.gb_Md.gb_3d.gb_Sd {
 form.gb_Te {
     background: #000000;
 }
-
+div.Ut8Gr{
+    color:ghostwhite;
+}
 /*text in blocks*/
 div.pcNKmc, div.k4WgAf, div.ZTClBb, div.kMNxad {
     color: #ffffff;
