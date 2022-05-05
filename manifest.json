@@ -1,5 +1,6 @@
 {
   "name": "Podcast Dark Mode",
+  "author": "Paul Kravchenko",
   "description": "Add dark theme to google podcasts!",
   "version": "1",
   "manifest_version": 3,
@@ -22,7 +23,11 @@
     {
       "matches": [ "https://podcasts.google.com/*" ],
       "css": [ "styles.css" ],
-      "js": [ "script_popup.js" ]
+      "js": [ "content_script.js" ],
+      "run_at": "document_end"
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
 }
