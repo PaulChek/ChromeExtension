@@ -13,9 +13,14 @@
         );
     });
 })(true);
-
+var l = 0;
 function Messagin(dark_flag) {
     chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
         chrome.tabs.sendMessage(tabs[0].id, { dark_flag }/*,  (response) => response.farewell*/);
+        chrome.sendMessage({ dark_flag });
     });
+    chrome.runtime.sendMessage({ l: l++ });
 }
+
+
+
