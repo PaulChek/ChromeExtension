@@ -1,12 +1,23 @@
-﻿*, div, span {
+﻿*, div, span, span.gUJ0Wc, div.MBPL8b {
     color: #ffffff;
 }
-
-a.fIqyif.MdgzLb {
+a.fIqyif.MdgzLb, span.DPvwYc{
     color: #b6ff00;
+}
+a.fIqyif.MdgzLb {
     background-color: #000000ab;
 }
-
+/*play circle*/
+circle.zbdB4c, circle.iIDD2e, line.aakBI, line.aZnmw {
+ stroke: #b6ff00;
+ fill:#3b3b3b;
+}
+path.ugRcF {
+ fill: #b6ff00;
+}
+line.Sygbc{
+ stroke:#ff5722;
+}
 body {
     background-color: #333333;
 }
