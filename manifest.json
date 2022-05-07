@@ -2,7 +2,8 @@
   "name": "Podcast Dark Mode",
   "author": "Paul Kravchenko",
   "description": "Add dark theme to google podcasts!",
-  "version": "1",
+  "permissions": [ "scripting", "activeTab", "storage" ],
+  "version": "1.0.1",
   "manifest_version": 3,
   "icons": {
     "16": "images/16x16.png",
@@ -12,22 +13,23 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_icon": { // optional
-      "16": "images/16x16.png", // optional
-      "24": "images/24x24.png", // optional
-      "32": "images/32x32.png" // optional
+    "default_icon": {
+      "16": "images/16x16.png",
+      "24": "images/24x24.png",
+      "32": "images/32x32.png"
     }
   },
   "options_page": "options.html",
   "content_scripts": [
     {
-      "matches": [ "https://podcasts.google.com/*" ],
-      "css": [ "styles.css" ],
-      "js": [ "content_script.js" ],
+      "matches": [ "https://podcasts.google.com/*", "https://podcasts.google.com/queue" ],
+      "css": [ "css/Dark_Theme.css" ],
+      "js": [ "js/content.js" ],
       "run_at": "document_end"
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "js/background.js",
+    "type": "module"
   }
 }

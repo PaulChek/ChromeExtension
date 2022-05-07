@@ -1,3 +1,5 @@
+
+
 ((dark_flag) => {
     document.addEventListener("DOMContentLoaded", function () {
         let btn = document.getElementById("btn1");
@@ -13,13 +15,13 @@
         );
     });
 })(true);
-var l = 0;
+
 function Messagin(dark_flag) {
     chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
         chrome.tabs.sendMessage(tabs[0].id, { dark_flag }/*,  (response) => response.farewell*/);
         chrome.sendMessage({ dark_flag });
     });
-    chrome.runtime.sendMessage({ l: l++ });
+    chrome.runtime.sendMessage({  l:"fdsf" });
 }
 
 
