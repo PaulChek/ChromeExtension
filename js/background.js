@@ -13,22 +13,20 @@ fetch("https://www.codewars.com/api/v1/users/paul2")
     .then(v => chrome.action.setBadgeText({ text: v.codeChallenges.totalCompleted % 10 + "" }));
 //end
 
+/*Messaging*/
 chrome.runtime.onMessage.addListener(
     async (request, sender, sendResponse) => {
         fetch("https://www.codewars.com/api/v1/users/paul2")
             .then(v => v.json())
             .then(v => logic.changeBadgeText(v.codeChallenges.totalCompleted % 10 + ""));
 
-
         const tabId = (await logic.getCurrentTab()).id;
-        console.log(tabId);
-
+ 
         chrome.scripting.insertCSS(
             {
                 target: { tabId },
                 files: [`css/${ DarkTheme ? "Light_Theme.css" : "Dark_Theme.css"}`]
-            }/*,
-            () => { ... }*/);
+            }/*,() => { ... }*/);
         DarkTheme = !DarkTheme;
     }
 

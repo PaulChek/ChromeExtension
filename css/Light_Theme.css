@@ -1,42 +1,45 @@
-﻿*, div, span, span.gUJ0Wc, div.MBPL8b {
-    color: #ffffff;
+﻿*, div, span, span.gUJ0Wc, div.MBPL8b, a {
+    color: #000000ab;
 }
-a.fIqyif.MdgzLb, span.DPvwYc{
-    color: #b6ff00;
-}
-a.fIqyif.MdgzLb {
-    background-color: #000000ab;
-}
+
+    div.a.fIqyif.MdgzLb, span.DPvwYc {
+        color: #808080;
+    }
+
 /*play circle*/
 circle.zbdB4c, circle.iIDD2e, line.aakBI, line.aZnmw {
- stroke: #b6ff00;
- fill:#3b3b3b;
+    stroke: #b6ff00;
+    fill: #3b3b3b;
 }
+
 path.ugRcF {
- fill: #b6ff00;
+    fill: #b6ff00;
 }
-line.Sygbc{
- stroke:#ff5722;
+
+line.Sygbc {
+    stroke: #ff5722;
 }
+
 body {
     background-color: white;
 }
 
 div.TiX9ce.dCWhBf, div.ptC3Le.FTnqqe.bBKqme, div.kUwJrc.R4GWv { /*slider*/
-    background-color: white;
+    background-color: #000000;
 }
 /*Play bar and top*/
 div.d5Ncgc, div.gb_Md.gb_3d.gb_Sd {
-    background-color: #3b3b3b;
+    background-color: lightgray;
 }
 
 form.gb_Te {
-    background: #000000;
+    background: #808080;
 }
-div.Ut8Gr{
-    color:ghostwhite;
+
+div.Ut8Gr {
+    color: lightslategray;
 }
 /*text in blocks*/
 div.pcNKmc, div.k4WgAf, div.ZTClBb, div.kMNxad {
-    color: #ffffff;
+    color: #000000ab;
 }
