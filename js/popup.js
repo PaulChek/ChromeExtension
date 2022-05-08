@@ -1,18 +1,16 @@
 
 
 ((dark_flag) => {
-    document.addEventListener("DOMContentLoaded", function () {
-        let btn = document.getElementById("btn1");
-        document.getElementById("btn1").addEventListener("click", _ => {
-            btn.innerText = dark_flag ? "Dark" : "Light";
-            btn.style.backgroundColor = !dark_flag ? "white" : "orangered";
+    document.addEventListener("DOMContentLoaded", () => {
 
-            Messagin(dark_flag);
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
 
-            dark_flag = !dark_flag;
+        btn1.addEventListener("click", _ => chrome.runtime.sendMessage({ message: "UpdateStats" }));
+        
 
-        }
-        );
+        btn2.addEventListener("click", _ => Messagin(dark_flag = !dark_flag) );
+
     });
 })(true);
 
@@ -21,8 +19,9 @@ function Messagin(dark_flag) {
         chrome.tabs.sendMessage(tabs[0].id, { dark_flag }/*,  (response) => response.farewell*/);
         chrome.sendMessage({ dark_flag });
     });
-    chrome.runtime.sendMessage({  l:"fdsf" });
+    chrome.runtime.sendMessage({ message: "ChangeTheme" });
 }
+
 
 
 
