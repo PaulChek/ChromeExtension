@@ -1,10 +1,17 @@
-﻿*, div, span, span.gUJ0Wc, div.MBPL8b, a {
+﻿*, div.gb_Oc, span, span.gUJ0Wc, div.MBPL8b, a {
+    color: revert;
+}
+
+*, div.gb_Oc, span, span.gUJ0Wc, div.MBPL8b, a {
     color: #000000ab;
 }
 
-    div.a.fIqyif.MdgzLb, span.DPvwYc {
-        color: #808080;
-    }
+.gb_na a, .gb_Hc a {
+    color: #000000ab;
+}
+nav.a.fIqyif.MdgzLb {
+    background-color: #000000;
+}
 
 /*play circle*/
 circle.zbdB4c, circle.iIDD2e, line.aakBI, line.aZnmw {

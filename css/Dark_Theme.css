@@ -1,4 +1,8 @@
-﻿*, div, span, span.gUJ0Wc, div.MBPL8b {
+﻿*, div.gb_Oc, span, span.gUJ0Wc, div.MBPL8b, a {
+    color: revert;
+}
+
+*, div, span, span.gUJ0Wc, div.MBPL8b {
     color: #ffffff;
 }
 a.fIqyif.MdgzLb, span.DPvwYc{

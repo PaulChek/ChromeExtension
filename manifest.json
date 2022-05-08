@@ -22,7 +22,7 @@
   "options_page": "options.html",
   "content_scripts": [
     {
-      "matches": [ "https://podcasts.google.com/*", "https://podcasts.google.com/queue" ],
+      "matches": [ "https://podcasts.google.com/*" ],
       "css": [ "css/Dark_Theme.css" ],
       "js": [ "js/content.js" ],
       "run_at": "document_end"
